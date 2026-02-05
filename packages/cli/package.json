@@ -1,0 +1,35 @@
+{
+  "name": "@4ndh4k/collect-skills",
+  "version": "1.0.0",
+  "description": "CLI tool for scanning and adding skills to the 4ndh4k-skills repository",
+  "type": "module",
+  "bin": {
+    "collect-skills": "./dist/bin/collect-skills.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
+    "prepack": "yarn build"
+  },
+  "dependencies": {
+    "@clack/prompts": "^0.8.2",
+    "commander": "^12.1.0",
+    "gray-matter": "^4.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "memfs": "^4.17.0",
+    "typescript": "^5.7.2",
+    "vitest": "^4.0.17"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "dist",
+    "package.json",
+    "README.md"
+  ]
+}
