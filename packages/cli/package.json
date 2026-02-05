@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "CLI tool for scanning and adding skills to the 4ndh4k-skills repository",
   "type": "module",
-  "bin": {
-    "collect-skills": "./dist/bin/collect-skills.js"
-  },
+  "bin": "./dist/bin/collect-skills.js",
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
@@ -31,5 +29,6 @@
     "dist",
     "package.json",
     "README.md"
-  ]
+  ],
+  "packageManager": "yarn@4.12.0"
 }
